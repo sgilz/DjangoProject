@@ -4,4 +4,4 @@ from .models import Hygrometer
 class HygrometerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hygrometer
-        fields = ('id', 'value')
+        fields = ('id', 'type', 'value', 'latitude', 'length', 'ground')

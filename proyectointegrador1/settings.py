@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'proyectointegrador1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pi1-eafit-db-sgilz',                     
+        'USER': 'sgilz@pi1-eafit-db-sgilz',                     
+        'PASSWORD': 'zxqAUO36',                  
+        'HOST': 'pi1-eafit-db-sgilz.mysql.database.azure.com',                     
+        'PORT': '3306',
     }
 }
 
